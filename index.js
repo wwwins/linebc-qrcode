@@ -167,7 +167,7 @@ var client = new net.Socket();
 function send(name) {
 	client.connect(5555, 'localhost', function() {
 		console.log('send:'+name);
-		client.write('name:'+name+"\n");
+		client.write(name);
 		client.destroy();
 	});
 }
