@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]> <html class="hover ie ie7 ie-static"> <![endif]-->
+<!--[if IE 8]> <html class="hover ie ie8 ie-static"> <![endif]-->
+<!--[if IE 9]> <html class="hover ie ie9 ie-static"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="zh-TW" class="hover"> <!--<![endif]-->
+<head runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<style>
+		#connecting {
+			position:fixed; top:0; left:0; height:100%; width:100%; background-color:rgba(0,0,0,0.5); text-align:center; font-size:10vh; padding-top:45vh;
+			color:#fff; text-shadow: 2px 2px 8px #000;
+			z-index:999;
+			animation: bounceOut 2s infinite;
+		}
+		@keyframes bounceOut {
+		  10% {
+			transform: scale3d(1.05, 1.05, 1.05);
+		  }
+		  20% {
+			transform: scale3d(1.0, 1.0, 1.0);
+		  }
+		  30% {
+			transform: scale3d(1.05, 1.05, 1.05);
+		  }
+		  40% {
+			transform: scale3d(1.0, 1.0, 1.0);
+		  }
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<img id="qr-code" style="display:none">
+	</div>
+	<div id="connecting">Connecting...</div>
+
+	<script>
+		window.$ = window.jQuery = require('jquery');
+	</script>
+	<script src="vendor/socket.io.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "linebc-qrcode",
+  "version": "1.0.0",
+  "description": "generate line qrcode",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/wwwins/linbc-qrcode",
+  "keywords": [
+    "Electron",
+    "linebc",
+    "line",
+    "qrcode",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "jquery": "^1.12.4"
+  }
+}
