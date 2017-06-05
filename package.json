@@ -4,7 +4,8 @@
   "description": "generate line qrcode",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "setup": "electron . & cd ~/github/nowlab/ && python isobar-face-detect-gevent.py"
   },
   "repository": "https://github.com/wwwins/linbc-qrcode",
   "keywords": [
