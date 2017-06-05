@@ -1,7 +1,7 @@
 const {app, BrowserWindow} = require('electron');
 
-const APP_WIDTH = 500;
-const APP_HEIGHT = 500;
+const APP_WIDTH = 550;
+const APP_HEIGHT = 400;
 
 let mainWindow;
 
@@ -16,6 +16,8 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
+          x: 1970,
+          y: 370,
           width: APP_WIDTH,
           height: APP_HEIGHT,
           frame:false,
