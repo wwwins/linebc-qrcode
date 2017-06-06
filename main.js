@@ -1,7 +1,7 @@
 const {app, BrowserWindow} = require('electron');
 
 const APP_WIDTH = 550;
-const APP_HEIGHT = 380;
+const APP_HEIGHT = 400;
 
 let mainWindow;
 

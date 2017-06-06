@@ -118,8 +118,8 @@ $(function () {
 			}).make().done(function (qr) {
 				var canvas = CoolR.Util.image2canvas(img);
 				var ctx = canvas.getContext('2d');
-				var size = 196;
-				ctx.drawImage(qr, (img.width - size) / 2, -50+(img.height - size) / 2, size, size);
+				var size = img.height;
+				ctx.drawImage(qr, (img.width - size) / 2, (img.height - size) / 2, size, size);
 				$('#qr-code').empty().append(canvas);
 			});
 		})
