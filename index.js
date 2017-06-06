@@ -119,6 +119,7 @@ $(function () {
 				var canvas = CoolR.Util.image2canvas(img);
 				var ctx = canvas.getContext('2d');
 				var size = img.height;
+				ctx.imageSmoothingEnabled = false;
 				ctx.drawImage(qr, (img.width - size) / 2, (img.height - size) / 2, size, size);
 				$('#qr-code').empty().append(canvas);
 			});
